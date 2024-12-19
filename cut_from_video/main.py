@@ -94,7 +94,6 @@ class FirstMilitaryTracker:
             end = time()
             fps = 1 / round(end - start, 1)
             cv2.putText(frame, f'FPS: {int(fps)}', (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 2)
-            cv2.putText(frame, f'Total objects: {summa}', (20, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 2)
 
             cv2.imshow('1st version', new_frame)
 
